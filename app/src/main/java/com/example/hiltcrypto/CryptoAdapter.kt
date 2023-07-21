@@ -16,6 +16,7 @@ class CryptoAdapter(private val cryptoModel: List<CryptoModel>):RecyclerView.Ada
                 .into(itemView.findViewById(R.id.image))
 
             itemView.findViewById<TextView>(R.id.cryptocurrency).text = index.name
+            itemView.findViewById<TextView>(R.id.cryptoPrice).text = index.price
         }
 
     }
